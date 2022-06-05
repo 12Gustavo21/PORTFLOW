@@ -18,7 +18,8 @@ body{
     width: 90%;
     height: 113px;
     max-width: 1400px;
-    margin: auto;   
+    margin: auto;  
+    position: fixed;
 }
 .menu{
     display: none;
