@@ -50,7 +50,7 @@ header nav ul li a {
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
-    height: 70vh;
+    height: 700px;
     color: #FFFFFF;
     display: flex;
 }
@@ -134,6 +134,7 @@ footer{
 
 button {
     display: none;
+    border: none;
 }
 
 
