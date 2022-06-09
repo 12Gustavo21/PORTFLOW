@@ -27,6 +27,7 @@ body{
 .title{
     font-weight: bold;
     font-size: 40px;
+    margin-left: 50px;
 }
 header nav ul {
     list-style: none;
@@ -167,6 +168,7 @@ button {
     }
     .title{
         font-size:27px;
+        margin-left: 0;
     }
     nav {
         display: none;
