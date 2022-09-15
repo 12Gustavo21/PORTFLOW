@@ -11,8 +11,7 @@
 ### How to use
  
  - git clone https://github.com/12Gustavo21/Portflow.git
- - npm install
  - code .
- - npm start
+ - Start a Live Server
  
  ## Online Page: https://12gustavo21.github.io/Portflow/
