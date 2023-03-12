@@ -4,7 +4,7 @@
 
 ## Final challenge [01] Vai na Web M1
 
-<img width ='600px' src ='./assets/videos/Recording.gif' />
+<img width ='600px' src ='./src/assets/videos/Recording.gif' />
 
 *Technologies*
 
