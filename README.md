@@ -1,6 +1,6 @@
 # Portflow
 
-> Status : Unfinished project 🕰️ / Open PR
+> Status : Finished project ✅ / Open PR
 
 ## Final challenge [01] Vai na Web M1
 
