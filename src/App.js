@@ -28,6 +28,10 @@ import TelegramIcon from './assets/icons/Telegram.svg';
 import WhatsappIcon from './assets/icons/WhatsApp.svg';
 import YoutubeIcon from './assets/icons/Youtube.svg';
 
+//Aos library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function App() {
   const gallery = [
@@ -141,6 +145,7 @@ export default function App() {
   };
 
   useEffect(() => {
+    AOS.init();
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -187,29 +192,41 @@ export default function App() {
       <S.Main>
         <S.MainContainer>
           <S.MainContent>
-            <S.Figures>
+            <S.Figures
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            >
               {
                 gallery.slice(0, 4).map((item) => (
                   <S.ImageBox>
-                    <img loading='lazy' src={item.image} alt={item.alt} key={item.id} title={item.alt} />
+                    <img loading="lazy" src={item.image} alt={item.alt} key={item.id} title={item.alt} />
                   </S.ImageBox>
                 ))
               }
             </S.Figures>
-            <S.Figures>
+            <S.Figures
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            >
               {
                 gallery.slice(4, 8).map((item) => (
                   <S.ImageBox>
-                    <img loading='lazy' src={item.image} alt={item.alt} key={item.id} title={item.alt} />
+                    <img loading="lazy" src={item.image} alt={item.alt} key={item.id} title={item.alt} />
                   </S.ImageBox>
                 ))
               }
             </S.Figures>
-            <S.Figures>
+            <S.Figures
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            >
               {
                 gallery.slice(8, 12).map((item) => (
                   <S.ImageBox>
-                    <img loading='lazy' src={item.image} alt={item.alt} key={item.id} title={item.alt} />
+                    <img loading="lazy" src={item.image} alt={item.alt} key={item.id} title={item.alt} />
                   </S.ImageBox>
                 ))
               }
@@ -223,7 +240,7 @@ export default function App() {
             <S.Icons>
               {
                 gallery.slice(12, 18).map((item) => (
-                  <img src={item.image} alt={item.alt} key={item.id} title={item.alt} />
+                  <img loading="lazy" src={item.image} alt={item.alt} key={item.id} title={item.alt} />
                 ))
               }
             </S.Icons>
