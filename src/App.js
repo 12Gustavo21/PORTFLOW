@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import Burguer from "./components/Burger";
+
 //Styles
 import * as S from './style';
 import GlobalStyle from './global/style';
@@ -155,11 +157,7 @@ export default function App() {
             hiddenMenu={scroll === 'down'}
           >
             <S.MenuBox>
-              <S.Menu>
-                <S.MenuLine></S.MenuLine>
-                <S.MenuLine></S.MenuLine>
-                <S.MenuLine></S.MenuLine>
-              </S.Menu>
+              <Burguer />
             </S.MenuBox>
             <S.LogoBox>
               <S.Logo>PortFlow</S.Logo>
@@ -193,7 +191,7 @@ export default function App() {
               {
                 gallery.slice(0, 4).map((item) => (
                   <S.ImageBox>
-                    <img src={item.image} alt={item.alt} key={item.id} />
+                    <img loading='lazy' src={item.image} alt={item.alt} key={item.id} title={item.alt} />
                   </S.ImageBox>
                 ))
               }
@@ -202,7 +200,7 @@ export default function App() {
               {
                 gallery.slice(4, 8).map((item) => (
                   <S.ImageBox>
-                    <img src={item.image} alt={item.alt} key={item.id} />
+                    <img loading='lazy' src={item.image} alt={item.alt} key={item.id} title={item.alt} />
                   </S.ImageBox>
                 ))
               }
@@ -211,7 +209,7 @@ export default function App() {
               {
                 gallery.slice(8, 12).map((item) => (
                   <S.ImageBox>
-                    <img src={item.image} alt={item.alt} key={item.id} />
+                    <img loading='lazy' src={item.image} alt={item.alt} key={item.id} title={item.alt} />
                   </S.ImageBox>
                 ))
               }
@@ -229,11 +227,16 @@ export default function App() {
                 ))
               }
             </S.Icons>
-            <S.Copyright>
-              <h3>Copyright</h3>
-              <p>Layout produzido por Vai na Web para fins exclusivamente educacionais.
-                Referência: <a href='https://br.pinterest.com/pin/464644886562510861' target="_blank" rel="noopener noreferrer" title="Referência" >https://br.pinterest.com/pin/464644886562510861</a></p>
-            </S.Copyright>
+            <S.References>
+              <S.Copyright>
+                <h3>Copyright</h3>
+                <p>Layout produzido por Vai na Web para fins exclusivamente educacionais.
+                  Referência: <a href='https://br.pinterest.com/pin/464644886562510861' target="_blank" rel="noopener noreferrer" title="Referência" >https://br.pinterest.com/pin/464644886562510861</a></p>
+              </S.Copyright>
+              <button>
+                <a href='#top'>Topo</a>
+              </button>
+            </S.References>
           </S.FooterContent>
         </S.FooterContainer>
       </S.Footer>
